@@ -12,7 +12,27 @@ Create a secure application for managing bank accounts.
 
 ### Database
 - The application is powered by a remote database server.
-- Add the database credentials in ```php-validation/db.php```
+- Add the database credentials in ```php-validation/db.php``` file like this
+
+```php
+   <?php
+
+    $host = 'xx.xx.xx.xx';
+    $db = 'dbname';
+    $user = 'username';
+    $pass = 'password';
+    $port = xxxx;
+
+    try {
+        $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die("Erreur de connexion : " . $e->getMessage());
+    }
+    ?>
+ 
+```
+
 
 ### Application Functionality
 The application is designed to provide users with a secure and user-friendly interface for managing their bank accounts. Here’s an overview of how the application works:
