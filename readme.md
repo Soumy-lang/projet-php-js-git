@@ -11,8 +11,8 @@ Create a secure application for managing bank accounts.
 ```php -S localhost:8080```
 
 ### Database
-The application is powered by a remote database server.
-Add the database credentials in php-validation/db.php
+- The application is powered by a remote database server.
+- Add the database credentials in php-validation/db.php
 
 ### Application Functionality
 The application is designed to provide users with a secure and user-friendly interface for managing their bank accounts. Here’s an overview of how the application works:
