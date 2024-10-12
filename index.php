@@ -2,10 +2,10 @@
 session_start();
 
 if (isset($_SESSION['clientId'])) {
-    header('Location: dashboard.php');
+    header('Location: php/dashboard.php');
     exit();
 }else{
-    header('Location: connexion.php');
+    header('Location: login.php');
     exit();
 }
 ?>

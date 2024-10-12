@@ -4,5 +4,5 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription - Banque en ligne</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/validation.js"></script>
+    <script src="js-validation/validation.js"></script>
 </head>
